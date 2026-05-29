@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# LangLearn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A language learning web application for Chinese, Spanish, and Arabic with interactive flashcards, quizzes, and voice pronunciation — themed with Sierra Leone colors.
 
-Currently, two official plugins are available:
+**Developed by [Vamba Lolleh](https://github.com/lolleh)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **1000+ words** and **500+ sentences** per language
+- **Flashcards** with flip-to-reveal and voice pronunciation
+- **Quizzes** with multiple choice and instant feedback
+- **Progress tracking** with localStorage (no account needed)
+- **Voice pronunciation** via Web Speech API (rate 0.7, male voice)
+- **Sierra Leone theme** with green and blue color scheme
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Languages
 
-## Expanding the ESLint configuration
+| Language | Words | Sentences |
+|----------|-------|-----------|
+| Chinese  | 428   | 153       |
+| Spanish  | 908   | 374       |
+| Arabic   | 281   | 118       |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Vite 5** — Build tool
+- **React 18** — UI framework
+- **TypeScript** — Type safety
+- **Tailwind CSS 3** — Styling
+- **React Router** — Navigation
+- **Web Speech API** — Voice pronunciation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+See [INSTALL.md](./INSTALL.md) for installation instructions.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+MIT

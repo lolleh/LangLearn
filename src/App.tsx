@@ -9,9 +9,9 @@ import ProgressPage from "@/pages/ProgressPage"
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50 text-gray-900 antialiased">
+      <div className="flex min-h-screen flex-col bg-gray-50 text-gray-900 antialiased">
         <Navbar />
-        <main className="mx-auto max-w-5xl px-4 py-8">
+        <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/language/:slug" element={<LanguagePage />} />
@@ -20,6 +20,9 @@ export default function App() {
             <Route path="/progress" element={<ProgressPage />} />
           </Routes>
         </main>
+        <footer className="border-t border-gray-200 bg-white py-4 text-center text-sm text-gray-400">
+          Developed by <a href="https://github.com/lolleh" className="font-medium text-sl-green hover:text-sl-green-dark transition-colors">Vamba Lolleh</a>
+        </footer>
       </div>
     </BrowserRouter>
   )
