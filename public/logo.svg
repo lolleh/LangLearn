@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
+  <rect x="4" y="4" width="40" height="40" rx="8" fill="#1EB53A"/>
+  <rect x="4" y="18" width="40" height="10" fill="#FFFFFF"/>
+  <rect x="4" y="28" width="40" height="16" rx="0" fill="#0072C6"/>
+  <text x="24" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#1EB53A">SL</text>
+  <text x="56" y="30" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#1EB53A">LangLearn</text>
+</svg>
