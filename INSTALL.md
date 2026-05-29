@@ -67,8 +67,8 @@ npm run preview
 Using Git Bash, PowerShell, or Command Prompt:
 
 ```bash
-git clone <repository-url> language-learner
-cd language-learner
+git clone https://github.com/lolleh/LangLearn
+cd langlearn
 ```
 
 Or download and extract the ZIP file, then open a terminal (Command Prompt or PowerShell) in the extracted folder.
