@@ -19,8 +19,8 @@ npm --version    # Should show 9.x or higher
 ### 1. Clone or Download
 
 ```bash
-git clone <repository-url> language-learner
-cd language-learner
+git clone https://github.com/lolleh/LangLearn
+cd langlearn
 ```
 
 Or download and extract the ZIP file, then open a terminal in the extracted folder.
